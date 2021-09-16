@@ -39,7 +39,8 @@ body {
  
 .contact__name {
     line-height: 0.8;
-    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
 .contact__first-name {
@@ -55,7 +56,7 @@ body {
 
 .contact__role {
     font-weight: 100;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #939393;
 }
 .contact__social-block {
@@ -94,6 +95,7 @@ body {
 .contact__item:hover > .contact__link {
     color: #F8BB10;
     background-color: rgba(141, 140, 140, 0);
+    
 }
 
 .contact__link {
