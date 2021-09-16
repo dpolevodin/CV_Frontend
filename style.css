@@ -67,8 +67,8 @@ body {
 
 .contact__social {
     display: flex;
-    width: 16rem;
-    height: 5rem;
+    width: 9rem;
+    height: 10rem;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -76,10 +76,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 5%;
     background-color: rgba(141, 140, 140, 0.2);
-
-    font-size: 3rem;
+    font-size: 2rem;
 }
