@@ -4,6 +4,7 @@
 
 body {
     background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -24,7 +25,7 @@ body {
 }
 
 .avatar-image { 
-    width: 14rem;
+    width: 15rem;
     border-radius: 50%;
     margin-right: 8rem;
 }
@@ -37,25 +38,25 @@ body {
 }
  
 .contact__name {
-    line-height: 0.6;
+    line-height: 0.8;
     margin-bottom: 2rem;
-
 }
 
 .contact__first-name {
     font-size: 4rem;
-    font-weight: 200;
-    color: rgb(97, 95, 92);
+    font-weight: 100;
+    color: #939393;
 }
 
 .contact__second-name {
     font-size: 6rem;
-    color: orange;
+    color: #F8BB10;
 }
 
 .contact__role {
-    font-weight: 50;
-    color: rgb(141, 138, 138);
+    font-weight: 100;
+    font-size: 1.4rem;
+    color: #939393;
 }
 .contact__social-block {
     display: flex;
@@ -67,18 +68,36 @@ body {
 
 .contact__social {
     display: flex;
-    width: 9rem;
+    width: 10rem;
     height: 10rem;
     justify-content: space-between;
     align-items: flex-end;
 }
-.contact__links { 
+.contact__item { 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 5%;
-    background-color: rgba(141, 140, 140, 0.2);
-    font-size: 2rem;
+    background-color: #ededed;
+    border: 0.15rem solid #ededed;
+    border-radius: 15%;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
+.contact__item:hover {
+    background-color: rgba(141, 140, 140, 0);
+    border: 0.15rem solid rgba(141, 140, 140, 0.2);  
+}
+
+.contact__item:hover > .contact__link {
+    color: #F8BB10;
+    background-color: rgba(141, 140, 140, 0);
+}
+
+.contact__link {
+    color: #939393;
+}
+
+
