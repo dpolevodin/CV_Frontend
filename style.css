@@ -1,0 +1,85 @@
+:root {
+    --bg-color: #FFF;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.avatar { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.avatar-image { 
+    width: 14rem;
+    border-radius: 50%;
+    margin-right: 8rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+ 
+.contact__name {
+    line-height: 0.6;
+    margin-bottom: 2rem;
+
+}
+
+.contact__first-name {
+    font-size: 4rem;
+    font-weight: 200;
+    color: rgb(97, 95, 92);
+}
+
+.contact__second-name {
+    font-size: 6rem;
+    color: orange;
+}
+
+.contact__role {
+    font-weight: 50;
+    color: rgb(141, 138, 138);
+}
+.contact__social-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.contact__social {
+    display: flex;
+    width: 16rem;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.contact__links { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5%;
+    background-color: rgba(141, 140, 140, 0.2);
+
+    font-size: 3rem;
+}
