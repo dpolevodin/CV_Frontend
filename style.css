@@ -50,13 +50,13 @@ body {
 }
 
 .contact__second-name {
-    font-size: 6rem;
+    font-size: 5.5rem;
     color: #F8BB10;
 }
 
 .contact__role {
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #939393;
 }
 .contact__social-block {
