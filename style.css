@@ -4,7 +4,7 @@
 
 body {
     background-color: var(--bg-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -25,10 +25,12 @@ body {
 }
 
 .avatar-image { 
-    width: 15rem;
-    border-radius: 50%;
+    width: 16rem;
     margin-right: 8rem;
+    animation: emergence-avatar 0.75s linear;
 }
+
+
 
 .contact {
     display: flex;
@@ -38,27 +40,34 @@ body {
 }
  
 .contact__name {
-    line-height: 0.8;
+    line-height: 0.7;
     margin-top: 0;
     margin-bottom: 1.5rem;
+ 
 }
 
 .contact__first-name {
     font-size: 4rem;
-    font-weight: 100;
+    font-weight: 200;
     color: #939393;
+    animation: emergence-first-name 1s linear;
 }
 
 .contact__second-name {
     font-size: 5.5rem;
+    font-weight: 500;
     color: #F8BB10;
+    animation: emergence-second-name 1.25s linear;
 }
 
 .contact__role {
-    font-weight: 100;
+    display: block;
+    font-weight: 200;
     font-size: 1.3rem;
     color: #939393;
+    animation: emergence-role 1.5s linear;
 }
+
 .contact__social-block {
     display: flex;
     flex-direction: row;
@@ -74,6 +83,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .contact__item { 
     display: flex;
     justify-content: center;
@@ -99,8 +109,137 @@ body {
     
 }
 
-.contact__link {
-    color: #939393;
+.contact__item:nth-child(1) {
+    animation: emergence-social-first 1.75s linear;
 }
 
+.contact__item:nth-child(2) {
+    animation: emergence-social-first 1.85s linear;
+}
+
+.contact__item:nth-child(3) {
+    animation: emergence-social-first 1.95s linear;
+}
+
+.contact__link {
+    color: #939393; 
+    padding: 0.75rem; 
+    z-index: 1;   
+}
+
+
+
+@keyframes emergence-avatar {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes emergence-first-name {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+    14% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes emergence-second-name {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+    28% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes emergence-role {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+    42% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes emergence-social-first {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+    56% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes emergence-social-second {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+    70% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes emergence-social-third {
+	0% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+    84% {
+        transform: translateY(2rem);
+		opacity: 0;
+	}
+
+	100% {
+        transform: translateY(0);
+		opacity: 1;
+	}
+}
 
