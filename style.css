@@ -22,11 +22,12 @@ body {
     justify-content: flex-end;
     align-items: center;
     width: 40%;
+    background-color: #fbfbfb;
 }
 
 .avatar-image { 
     width: 16rem;
-    margin-right: 8rem;
+    margin-right: 4rem;
     animation: emergence-avatar 0.7s linear;
 }
 
@@ -36,6 +37,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 4rem;
     width: 30%;
 }
  
