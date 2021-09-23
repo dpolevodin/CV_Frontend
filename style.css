@@ -8,6 +8,7 @@
     --background-fonts-color-dark: #727272;
     --background-social-light: #ededed;
     --background-social-medium: #c6c6c6;
+    --background-fonts-dark-opacity: rgba(114, 114, 114, 0.9);
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     display: flex;
     height: 4vh;
     width: 100%;
-    background-color: var(--bacground-section-medium);
+    background-color: var(--background-fonts-dark-opacity);
 }
 
 .container {
@@ -78,6 +79,7 @@ body {
     color: var(--background-fonts-color-medium);
     animation: emergence-first-name 0.8s linear;
 }
+
 .hero__contact-surname {
     font-size: 5.5rem;
     font-weight: 500;
@@ -106,12 +108,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 0.75rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.5rem;
     background-color: var(--background-social-light);
     border: 0.15rem solid var(--background-social-light);
-    border-radius: 15%;
+    border-radius: 10%;
     font-size: 1.5rem;
     cursor: pointer;
     transition: background-color ease-in 0.3s;
