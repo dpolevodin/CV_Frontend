@@ -1,6 +1,7 @@
 :root {
     --background-color-white: #fff;
     --background-color-bright: #F8BB10;
+    --background-color-bright-opacity: rgba(248, 187, 16, 0.8);
     --background-color-dark-gradient: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.75) 100%);
     --bacground-section-light: #fbfbfb;
     --bacground-section-medium: #f8f8f8;
@@ -21,7 +22,7 @@ body {
     display: flex;
     height: 4vh;
     width: 100%;
-    background-color: var(--background-fonts-dark-opacity);
+    background-color: var(--background-color-bright-opacity);
 }
 
 .container {
@@ -215,7 +216,12 @@ body {
 }
 
 .skills__legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     flex-basis: 40%;
+
     background-color: var(--bacground-section-medium);
 }
 .skills__content {
@@ -256,6 +262,96 @@ body {
     display: flex;
     height: 4vh;
     background-color: rgba(0, 0, 255, 0.185);
+}
+
+/* progress-bar */
+
+.progressbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar__background {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    width: 20rem;
+    height: 1rem;
+    border-radius: 0.6rem;
+    background-color: var(--background-fonts-color-dark);
+}
+
+.progressbar__outer-html {
+    width: 15rem;
+    height: 100%;
+    border-radius: 0.4rem 0 0 0.4rem;
+    background-color: var(--background-color-bright);
+    box-shadow: 0 0rem 2rem var(--background-color-bright);
+    animation: progressbar-html 2s ease-out;
+}
+
+.progressbar__outer-css {
+    width: 16rem;
+    height: 100%;
+    border-radius: 0.4rem 0 0 0.4rem;
+    background-color: #d9138a;
+    box-shadow: 0 0rem 2rem #d9138a;
+    animation: progressbar-css 2s ease-out;
+}
+
+.progressbar__outer-javascript {
+    width: 14rem;
+    height: 100%;
+    border-radius: 0.4rem 0 0 0.4rem;
+    background-color: #039fbe;
+    box-shadow: 0 0rem 2rem #039fbe;
+    animation: progressbar-javascript 2s ease-out;
+}
+
+.progressbar__outer-git {
+    width: 10rem;
+    height: 100%;
+    border-radius: 0.4rem 0 0 0.4rem;
+    background-color: #b20238;
+    box-shadow: 0 0rem 2rem #b20238;
+    animation: progressbar-git 2s ease-out;
+}
+
+@keyframes progressbar-html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 15rem;
+    }
+}
+
+@keyframes progressbar-css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 16rem;
+    }
+}
+
+@keyframes progressbar-javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 14rem;
+    }
+}
+
+@keyframes progressbar-git {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 10rem;
+    }
 }
 
 @keyframes emergence-avatar {
