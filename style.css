@@ -277,7 +277,7 @@ body {
     align-items: center;
     padding: 0.25rem;
     width: 20rem;
-    height: 1rem;
+    height: 0.5rem;
     border-radius: 0.6rem;
     background-color: var(--background-fonts-color-dark);
 }
@@ -295,8 +295,8 @@ body {
     width: 16rem;
     height: 100%;
     border-radius: 0.4rem 0 0 0.4rem;
-    background-color: #d9138a;
-    box-shadow: 0 0rem 2rem #d9138a;
+    background-color: #78cbe0;
+    box-shadow: 0 0rem 2rem #78cbe0;
     animation: progressbar-css 2s ease-out;
 }
 
@@ -304,8 +304,8 @@ body {
     width: 14rem;
     height: 100%;
     border-radius: 0.4rem 0 0 0.4rem;
-    background-color: #039fbe;
-    box-shadow: 0 0rem 2rem #039fbe;
+    background-color: #f2f560;
+    box-shadow: 0 0rem 2rem #f2f560;
     animation: progressbar-javascript 2s ease-out;
 }
 
@@ -313,8 +313,8 @@ body {
     width: 10rem;
     height: 100%;
     border-radius: 0.4rem 0 0 0.4rem;
-    background-color: #b20238;
-    box-shadow: 0 0rem 2rem #b20238;
+    background-color: #27b4be;
+    box-shadow: 0 0rem 2rem #27b4be;
     animation: progressbar-git 2s ease-out;
 }
 
