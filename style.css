@@ -10,6 +10,11 @@
     --background-social-light: #ededed;
     --background-social-medium: #c6c6c6;
     --background-fonts-dark-opacity: rgba(114, 114, 114, 0.9);
+    --background-skills: #22262D;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -17,35 +22,30 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.header {
-    position: fixed;
-    display: flex;
-    height: 4vh;
-    width: 100%;
-    background-color: var(--background-color-bright-opacity);
-}
-
 .container {
     display: flex;
     flex-direction: column;
     height: 400vh;
-    padding: 0 12rem 0 0;
 }
 
 .hero {
     display: flex;
+    justify-content: center;
     height: 25%;
+    padding: 0 12rem;
 }
 
 .hero__avatar {
     display: flex;
-    flex-basis: 40%;
-    background-color: var(--bacground-section-light);
     justify-content: flex-end;
     align-items: center;
 }
 
-.avatar__container {
+.hero__bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
 }
 
 .avatar {
@@ -59,18 +59,15 @@ body {
 .hero__contact {
     display: flex;
     flex-direction: column;
-    flex-basis: 60%;
+    width: 100%;
 }
 
 .hero__contact-personal {
     display: flex;
     flex-direction: column;
-    flex-basis: 65%;
-    width: 100%;
     justify-content: flex-end;
     align-items: flex-start;
     line-height: 0.7;
-    margin-left: 4rem;
 }
 
 .hero__contact-name {
@@ -100,9 +97,8 @@ body {
 
 .hero__contact-social {
     display: flex;
+    flex: 1 0 auto;
     justify-content: flex-end;
-    flex-basis: 25%;
-    width: 80%;
 }
 
 .hero__social-item {
@@ -154,9 +150,14 @@ body {
 
 .hero__footer {
     display: flex;
+    justify-content: flex-end;
     flex: 0 0 auto;
+    padding: 0 0 2rem 0;
+}
+
+.hero__footer-content {
+    display: flex;
     justify-content: center;
-    flex-basis: 10%;
     width: 80%;
     padding-top: 2rem;
     margin-left: 4rem;
@@ -212,35 +213,7 @@ body {
     display: flex;
     width: 100%;
     height: 25%;
-    background-color: chocolate;
-}
-
-.skills__legend {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 40%;
-
-    background-color: var(--bacground-section-medium);
-}
-.skills__content {
-    flex-basis: 60%;
-}
-
-.experience {
-    display: flex;
-    width: 100%;
-    height: 25%;
-    background-color: coral;
-}
-
-.experience__legend {
-    flex-basis: 40%;
-    background-color: var(--bacground-section-light);
-}
-.experience__content {
-    flex-basis: 60%;
+    background-color: var(--background-skills)
 }
 
 .portfolio {
@@ -250,17 +223,10 @@ body {
     background-color: cadetblue;
 }
 
-.portfolio__legend {
-    flex-basis: 40%;
-    background-color: var(--bacground-section-medium);
-}
-.portfolio__content {
-    flex-basis: 60%;
-}
-
 .footer {
     display: flex;
-    height: 4vh;
+    width: 100%;
+    height: 25%;
     background-color: rgba(0, 0, 255, 0.185);
 }
 
