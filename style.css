@@ -258,6 +258,10 @@ body {
   margin: 0 0 10rem 0;
 }
 
+.skills__item:last-child {
+  margin: 0;
+}
+
 .skills__item-header {
   color: var(--background-color-white);
   font-weight: bold;
