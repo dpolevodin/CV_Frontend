@@ -7,8 +7,8 @@
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0.75) 100%
   );
-  --bacground-section-light: #fbfbfb;
-  --bacground-section-medium: #f8f8f8;
+  --background-section-light: #fbfbfb;
+  --background-section-medium: #f8f8f8;
   --background-fonts-color-medium: #939393;
   --background-fonts-color-dark: #727272;
   --background-social-light: #ededed;
@@ -22,6 +22,7 @@
   --progressbar-inner-gradient-primary: #ffae63;
   --progressbar-inner-gradient-secondary: #ff404b;
   --skills-main-text: #9399a4;
+  --background-portfolio: #1b1f24;
 }
 
 * {
@@ -227,15 +228,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  padding: 5rem 16rem;
+  padding: 6rem 6rem 0 18rem;
   background-color: var(--background-skills);
 }
 
 .skills__header {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 0 0 4rem 0;
   font-size: 4rem;
   line-height: 4.75rem;
@@ -250,19 +250,97 @@ body {
   width: 80%;
 }
 
+.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
 .skills__item {
   display: flex;
   flex-direction: column;
   width: 25.5rem;
-  height: 22.5rem;
-  margin: 0 0 10rem 0;
+  margin: 0 0 5rem 0;
 }
 
-.skills__item:last-child {
+.portfolio__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
+
+.portfolio__item-column {
+  display: flex;
+  width: 25.5rem;
+  flex-direction: column;
+  margin-right: 7rem;
+}
+
+.portfolio__item-column:last-child {
+  margin: 0;
+  width: 30rem;
+}
+
+.portfolio__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background-image: url(./image/project.png);
+  background-size: 100% 100%;
+}
+
+.portfolio__image:hover {
+  /* opacity: 0.4; */
+}
+
+.portfolio__image:hover .portfolio__button {
+  display: flex;
+}
+
+.portfolio__button {
+  display: flex;
+  width: 16rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8.75rem;
+  cursor: pointer;
+}
+
+.portfolio__button .portfolio__icon {
+  width: 1rem;
+  height: 1rem;
   margin: 0;
 }
 
+.portfolio__button-text {
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: bold;
+  color: var(--background-portfolio);
+}
+
+.portfolio__link {
+  text-decoration: none;
+  color: var(--background-portfolio);
+}
+
 .skills__item-header {
+  color: var(--background-color-white);
+  font-weight: bold;
+  font-size: 2.75rem;
+  line-height: 3.25rem;
+  margin: 0 0 2rem 0;
+}
+
+.portfolio__item-header {
   color: var(--background-color-white);
   font-weight: bold;
   font-size: 2.75rem;
@@ -276,9 +354,21 @@ body {
 
 .portfolio {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 25%;
-  background-color: cadetblue;
+  padding: 5rem 6rem 6rem 18rem;
+  background-color: var(--background-portfolio);
+}
+
+.portfolio__header {
+  display: flex;
+  width: 100%;
+  margin: 0 0 4rem 0;
+  font-size: 4rem;
+  line-height: 4.75rem;
+  font-weight: bold;
+  color: var(--background-color-white);
 }
 
 .footer {
@@ -303,6 +393,20 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.portfolio__icon-wrapper {
+  display: flex;
+}
+
+.portfolio__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  fill: var(--background-skills-icon);
+  margin: 0 0.25rem 2rem 0;
+}
+
 .skills__icon-text {
   padding: 0 1.25rem;
   margin-bottom: 1.25rem;
@@ -315,6 +419,14 @@ body {
   line-height: 1.25rem;
   color: var(--skills-progress-title);
   font-size: 1rem;
+  font-weight: normal;
+}
+
+.portfolio__item-text {
+  margin-bottom: 1rem;
+  line-height: 1.25rem;
+  color: var(--background-color-white);
+  font-size: 0.875rem;
   font-weight: normal;
 }
 
@@ -345,6 +457,14 @@ body {
 }
 
 .skills__item-content {
+  display: flex;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: var(--skills-main-text);
+}
+
+.portfolio__item-content {
   display: flex;
   width: 100%;
   font-size: 0.875rem;
