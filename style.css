@@ -587,8 +587,10 @@ body {
   }
   .avatar {
     margin: 0;
+    width: 10rem;
   }
   .hero__contact-personal {
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
   }
@@ -621,14 +623,17 @@ body {
     margin-bottom: 0.5rem;
   }
   .hero__contact-name {
+    margin-bottom: 0.5rem;
     font-size: 2rem;
   }
   .hero__contact-surname {
     font-size: 3rem;
     letter-spacing: 0;
+    margin-bottom: 1rem;
   }
   .hero__contact-role {
     text-align: center;
+    margin: 0 0 1rem 0;
   }
   .hero__contact-social {
     justify-content: center;
@@ -738,12 +743,30 @@ body {
   .main-footer__link {
     margin-bottom: 1rem;
   }
+  .hero__footer {
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8125rem;
+  }
+  .footer__item {
+    font-size: 0.8125rem;
+  }
+  .portfolio__button-text {
+    font-weight: bold;
+  }
+  .portfolio__button {
+    background-color: var(--background-color-bright);
+  }
   .hero__footer-content {
+    padding: 1.5rem 0 0 0;
     flex-direction: column;
     border: 0;
+    margin: 0;
   }
   .hero__foter-list {
     margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
   }
   .hero__contact-name {
     font-size: 2rem;
