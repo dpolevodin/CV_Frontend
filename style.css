@@ -23,6 +23,7 @@
   --progressbar-inner-gradient-secondary: #ff404b;
   --skills-main-text: #9399a4;
   --background-portfolio: #1b1f24;
+  --image-transparent: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -254,7 +255,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
 }
 
 .skills__item {
@@ -279,26 +280,38 @@ body {
 }
 
 .portfolio__item-column:last-child {
+  justify-content: center;
+  align-items: center;
   margin: 0;
   width: 30rem;
 }
 
 .portfolio__image {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 30rem;
+  height: 18.625rem;
   border-radius: 2rem;
   background-image: url(./image/project.png);
   background-size: 100% 100%;
 }
 
-.portfolio__image:hover {
-  /* opacity: 0.4; */
+.portfolio__image:last-child {
+  display: none;
+  position: absolute;
+  width: 30rem;
+  height: 18.625rem;
+  background-image: none;
+  background-color: var(--image-transparent);
 }
 
-.portfolio__image:hover .portfolio__button {
+.portfolio__image:last-child:hover {
+  display: flex;
+}
+
+.portfolio__image:hover + .portfolio__image:last-child {
   display: flex;
 }
 
@@ -314,9 +327,12 @@ body {
 }
 
 .portfolio__button .portfolio__icon {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
+  fill: var(--background-portfolio);
+  stroke: none;
   margin: 0;
+  padding: 0;
 }
 
 .portfolio__button-text {
@@ -330,6 +346,12 @@ body {
 .portfolio__link {
   text-decoration: none;
   color: var(--background-portfolio);
+}
+
+.portfolio__item-link {
+  text-decoration: none;
+  color: var(--skills-main-text);
+  font-weight: bold;
 }
 
 .skills__item-header {
@@ -404,6 +426,7 @@ body {
   height: 3rem;
   width: 3rem;
   fill: var(--background-skills-icon);
+  stroke: var(--background-skills-icon);
   margin: 0 0.25rem 2rem 0;
 }
 
@@ -466,6 +489,7 @@ body {
 
 .portfolio__item-content {
   display: flex;
+  flex-direction: column;
   width: 100%;
   font-size: 0.875rem;
   line-height: 1.375rem;
