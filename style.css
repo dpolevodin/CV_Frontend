@@ -291,8 +291,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
-  height: 18.625rem;
+  width: 32rem;
+  height: 16rem;
   border-radius: 2rem;
   background-image: url(./image/project.png);
   background-size: 100% 100%;
@@ -301,8 +301,8 @@ body {
 .portfolio__image:last-child {
   display: none;
   position: absolute;
-  width: 30rem;
-  height: 18.625rem;
+  width: 32rem;
+  height: 16rem;
   background-image: none;
   background-color: var(--image-transparent);
 }
@@ -357,6 +357,7 @@ body {
   text-decoration: none;
   color: var(--skills-main-text);
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .skills__item-header {
