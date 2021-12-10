@@ -400,6 +400,26 @@ body {
   background-color: var(--background-portfolio);
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 6rem 2rem 18rem;
+  background-color: var(--background-portfolio);
+}
+
+.about .portfolio__header {
+  margin: 0 0 1rem 0;
+}
+.about .portfolio__container {
+  height: auto;
+}
+
+.about .portfolio__item {
+  margin: 0;
+}
+
 .portfolio__header {
   display: flex;
   width: 100%;
@@ -606,6 +626,11 @@ body {
   .skills__container {
     width: 100%;
   }
+  .about {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    width: 100%;
+  }
+
   .skills {
     padding: 1.5rem 2rem 1.5rem 2rem;
     width: 100%;
