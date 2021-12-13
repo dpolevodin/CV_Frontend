@@ -167,17 +167,18 @@ body {
 
 .hero__footer {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   padding: 0 0 2rem 0;
 }
 
 .hero__footer-content {
   display: flex;
   justify-content: center;
-  width: 80%;
+  align-items: center;
+  width: 100%;
   padding-top: 2rem;
-  margin-left: 4rem;
   border-top: 0.1rem solid var(--background-social-light);
   animation: emergence-social-first 1.6s linear;
 }
@@ -665,6 +666,8 @@ body {
   }
   .hero__footer-content {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     border: 0;
     margin: 0;
     padding: 1rem 0 0 2rem;
@@ -687,6 +690,7 @@ body {
   }
   .hero__contact-social {
     justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .portfolio__header {
@@ -743,6 +747,8 @@ body {
     padding-right: 2rem;
   }
   .hero__footer-content {
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     margin: 0;
     flex-direction: column;
