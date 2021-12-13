@@ -597,7 +597,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   .hero {
     height: auto;
     flex-direction: column;
@@ -660,9 +660,14 @@ body {
   .main-footer__link {
     margin-bottom: 1rem;
   }
+  .hero__footer {
+    justify-content: flex-start;
+  }
   .hero__footer-content {
     flex-direction: column;
     border: 0;
+    margin: 0;
+    padding: 1rem 0 0 2rem;
   }
   .hero__foter-list {
     margin-bottom: 0.5rem;
@@ -715,10 +720,119 @@ body {
   }
 }
 
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) and (min-width: 576px) {
+  .hero__bio {
+    padding: 4rem 0 0 0;
+  }
+  .hero {
+    height: auto;
+    padding: 0 0 0 2rem;
+  }
+  .avatar {
+    width: 12rem;
+    margin-right: 2rem;
+  }
+  .hero__contact-name {
+    font-size: 2.5rem;
+  }
+  .hero__contact-surname {
+    font-size: 4rem;
+  }
+  .hero__contact-social {
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+  }
+  .hero__footer-content {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    border: none;
+  }
+  .about {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .skills {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .portfolio {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .portfolio__item-column {
+    margin-right: 0;
+    width: 100%;
+  }
+  .portfolio__item-column:last-child {
+    width: 100%;
+  }
+  .portfolio__header {
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+  .skills__header {
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+  .skills__item-header {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .skills__item {
+    margin-bottom: 2rem;
+  }
+  .portfolio__item-header {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .main-footer__item-wrapper {
+    flex-direction: column;
+  }
+  .main-footer__link {
+    margin: 0 0 1rem 0;
+  }
 }
 
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+  .hero__bio {
+    padding: 4rem 0 0 0;
+  }
+  .hero {
+    height: auto;
+    padding: 0 0 0 2rem;
+  }
+  .avatar {
+    width: 12rem;
+    margin-right: 2rem;
+  }
+  .hero__contact-name {
+    font-size: 2.5rem;
+  }
+  .hero__contact-surname {
+    font-size: 4rem;
+  }
+  .hero__contact-social {
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+  }
+  .hero__footer-content {
+    width: 100%;
+    margin: 0;
+  }
+  .about {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .skills {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .portfolio {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+  .portfolio__item-column {
+    margin-right: 0;
+    width: 100%;
+  }
+  .portfolio__item-column:last-child {
+    width: 100%;
+  }
 }
 
 @keyframes progressbar-js {
