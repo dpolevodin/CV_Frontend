@@ -328,6 +328,7 @@ body {
   border: none;
   border-radius: 8.75rem;
   cursor: pointer;
+  background-color: var(--background-section-light);
 }
 
 .portfolio__button .portfolio__icon {
