@@ -833,6 +833,25 @@ body {
   .portfolio__item-column:last-child {
     width: 100%;
   }
+  .portfolio__header {
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+  .skills__header {
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+  .skills__item-header {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .skills__item {
+    margin-bottom: 2rem;
+  }
+  .portfolio__item-header {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @keyframes progressbar-js {
