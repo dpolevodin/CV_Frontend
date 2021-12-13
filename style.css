@@ -541,11 +541,6 @@ body {
   color: var(--skills-main-text);
 }
 
-.skills__item:nth-child(1) .animation {
-  animation: progressbar-js 2s ease-out 1;
-  width: 80%;
-}
-
 .main-footer {
   display: flex;
   flex-direction: column;
@@ -885,6 +880,11 @@ body {
   }
 }
 
+.skills__item:nth-child(2) .animation {
+  animation: progressbar-js 2.5s ease-out 1;
+  width: 80%;
+}
+
 @keyframes progressbar-js {
   0% {
     width: 0;
@@ -894,7 +894,7 @@ body {
   }
 }
 
-.skills__item:nth-child(2) .animation {
+.skills__item:nth-child(3) .animation {
   animation: progressbar-css 2.5s ease-out 1;
   width: 85%;
 }
@@ -908,7 +908,7 @@ body {
   }
 }
 
-.skills__item:nth-child(3) .animation {
+.skills__item:nth-child(4) .animation {
   animation: progressbar-react 1.5s ease-out 1;
   width: 65%;
 }
@@ -922,7 +922,7 @@ body {
   }
 }
 
-.skills__item:nth-child(4) .animation {
+.skills__item:nth-child(5) .animation {
   animation: progressbar-git 2.5s ease-out 1;
   width: 70%;
 }
