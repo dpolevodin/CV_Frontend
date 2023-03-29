@@ -382,6 +382,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.portfolio__item-link:hover {
+  color: var(--background-color-bright);
+}
+
 .skills__item-header {
   color: var(--background-color-white);
   font-weight: bold;
@@ -1052,4 +1056,26 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.road {
+    display: flex;
+    width: full;
+}
+
+.road__item {
+  width: 10rem;
+  height: 2rem;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.road__item:nth-child(2n) {
+  width: 10rem;
+  height: 2rem;
+  border-top: 2px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
 }
