@@ -387,6 +387,24 @@ body {
   margin-top: .5rem;
 }
 
+.portfolio__item_more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.portfolio__link:hover h3{
+  color: var(--background-color-bright);
+}
+
+.portfolio__item-header_more {
+  margin-right: 2rem;
+}
+
 .portfolio__item-content_without-link {
   margin-bottom: 2rem;
 }
