@@ -487,7 +487,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   font-size: 4rem;
   line-height: 4.75rem;
   font-weight: bold;
@@ -967,7 +967,7 @@ body {
 
 .skills__item:nth-child(4) .animation {
   animation: progressbar-react 1.5s ease-out 1;
-  width: 65%;
+  width: 80%;
 }
 
 @keyframes progressbar-react {
@@ -981,7 +981,7 @@ body {
 
 .skills__item:nth-child(5) .animation {
   animation: progressbar-git 2.5s ease-out 1;
-  width: 70%;
+  width: 90%;
 }
 
 @keyframes progressbar-git {
@@ -1124,4 +1124,8 @@ body {
 
 .main-footer__link:hover {
   box-shadow:0 0 1.5rem #FFFFFF;
+}
+
+.skills__icon-wrapper_spacing {
+
 }
