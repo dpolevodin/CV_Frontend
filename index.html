@@ -69,7 +69,7 @@
             <div class="hero__footer-content">
               <ul class="hero__foter-list">
                 <li class="footer__item">Город</li>
-                <li class="footer__item">Тюмень</li>
+                <li class="footer__item">Омск</li>
               </ul>
               <ul class="hero__foter-list">
                 <li class="footer__item">Телефон</li>
@@ -101,18 +101,19 @@
           <div class="portfolio__item">
             <div class="portfolio__item-content">
               <p>
-                С января 2022 года работаю в роли frontend-разработчика компании «Сбербанк-Технологии» на проекте СберКласс (монолит + микрофронтенды).
-                <br>Основные обязанности: Разработка нового функционала на проекте/реализация story, RnD, фикс багов/инцидентов, покрытие проекта тестами: jest - для покрытия тестами store (effector), puppeteer - автотесты, перекрестное код ревью.
-              </p>
+                С 2021 года работаю в роли frontend-разработчика.
+                <br> Основные обязанности в ходе работы:
+                <br>- Создание интерфейсов для сервисов, основанных на микрофронтенд-архитектуры с использованием библиотеки React
+                <br>- Сопровождение проекта на всем протяжении CI/CD 
+                <br>- Заведение и распределение задач в команде фронтенд-разработки
+                <br>- Оказание менторской поддержки другим коллегам
+                <br>- Участвовал в проведении собеседований фронтенд-разработчиков на вакантные места в стриме
+                <br>- Анализ и исправление дефектов/инцидентов
+                <br>- Покрытие разработанного функционала unit-тестами
               <p>
                 С августа 2022 года вхожу в преподавательский состав программы переобучения сотрудников «Школа JavaScript» в Корпоративном университете Сбербанка.
                 <br>Зона ответственности: Проведение лекционных и практических занятий по Основам HTML, CSS, вводной информации о DOM.
                 <br>Курирую независимый проект по созданию расписания для "школы Javascript" Сбербанка выпускниками курса.
-
-              </p>
-              <p>
-                За время работы в СберТехе разработал в UI-kit и выпустил в StoryBook СберКласса «Карточки заданий», используемые многими командами платформы.
-                <br>Разработал и внедрил Сервис по распределению и бронированию development-стендов для разработки и тестирования.
               </p>
             </div>
           </div>
@@ -220,6 +221,54 @@
       <div class="portfolio">
         <div class="portfolio__container">
           <h2 class="portfolio__header">Проекты</h2>
+
+          <div class="portfolio__item">
+            <div class="portfolio__item-column">
+              <h3 class="portfolio__item-header">MP3-Плеер (Web)</h3>
+              <span class="portfolio__item-text">Инструменты</span>
+              <div class="portfolio__icon-wrapper">
+                <svg class="portfolio__icon">
+                  <use xlink:href="#react"></use>
+                </svg>
+                <svg class="portfolio__icon">
+                  <use xlink:href="#typescript"></use>
+                </svg>
+              </div>
+              <div class="portfolio__item-content portfolio__item-content_without-link">
+                Собственный проект для улучшения понимания работы со звуком и загружаемыми локальными файлами.
+                Для воспроизведения звука необходим загружать с локального диска mp3-композиции и наслаждаться любимым звуком.
+                Во время прослушивания музыки можно просматривать великолепные фото безграничного космоса любезно предоставляемые
+                открытым API компании NASA.
+                <br>Основные инструменты: React, typeScript/javaScript, CSS Modules.
+                </a>
+                <a
+                        class="portfolio__item-link"
+                        href="https://github.com/dpolevodin/web-player"
+                        target="_blank"
+                >Ссылка на репозиторий GitHub >>>
+              </a>
+              </div>
+            </div>
+            <div class="portfolio__item-column">
+              <img class="portfolio__image" src="./image/wplayer.png" />
+              <div class="portfolio__image">
+                <a
+                        class="portfolio__link"
+                        href="https://dpolevodin.github.io/web-player/"
+                        target="_blank"
+                >
+                  <button class="portfolio__button">
+                    <span class="portfolio__button-text">
+                      Посмотреть проект
+                    </span>
+                    <svg class="portfolio__icon">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
 
           <div class="portfolio__item">
             <div class="portfolio__item-column">
